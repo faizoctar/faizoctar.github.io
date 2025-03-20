@@ -5,86 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoori Store - Jasa Boosting Game</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background: linear-gradient(45deg, #ffb6b9, #fae3d9, #bbded6, #8ac6d1, #ffaaa5, #d5a18e, #b2f7ef);
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { 
+            background: linear-gradient(45deg, #ffb6b9, #fae3d9, #bbded6, #8ac6d1);
             background-size: 500% 500%;
             animation: gradientBG 15s infinite alternate;
-            text-align: center;
-            color: #222222;
+            text-align: center; color: #222222;
         }
-        @keyframes gradientBG {
+        @keyframes gradientBG { 
             0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
-        .container {
-            padding: 50px 20px;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        .tagline {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            font-weight: bold;
-        }
-        .services {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+        .container { padding: 50px 20px; }
+        h1 { font-size: 3em; margin-bottom: 15px; }
+        .tagline { font-size: 1.2em; margin-bottom: 40px; font-weight: bold; }
+        .services { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
         .service-card {
             background: rgba(255, 255, 255, 0.8);
-            color: #222222;
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px; border-radius: 10px;
+            width: 250px; text-align: center;
             transition: transform 0.3s ease, background 0.3s ease;
         }
         .service-card:hover {
             background: rgba(255, 255, 255, 1);
             transform: scale(1.05);
         }
-        .service-card img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
-        .service-card h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .pricing {
-            margin-top: 10px;
-            font-size: 1em;
-            line-height: 1.6;
-        }
-        .cta {
-            margin-top: 30px;
-        }
+        .service-card img { width: 50px; height: 50px; margin-bottom: 10px; }
+        .service-card h2 { font-size: 1.5em; margin-bottom: 10px; }
+        .pricing { margin-top: 10px; font-size: 1em; line-height: 1.6; }
+        .cta { margin-top: 30px; }
         .cta button {
-            background: #3b8686;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background 0.3s;
+            background: #3b8686; color: white;
+            padding: 15px 30px; border: none; border-radius: 5px;
+            font-size: 1.2em; cursor: pointer; transition: background 0.3s;
         }
-        .cta button:hover {
-            background: #296362;
-        }
+        .cta button:hover { background: #296362; }
     </style>
 </head>
 <body>
@@ -93,46 +48,30 @@
         <p class="tagline">Dapatkan level tertinggi dengan cepat dan aman!</p>
         
         <div class="services">
-            <div class="service-card">
-                <img src="https://static.wikia.nocookie.net/houkai-star-rail/images/8/84/Honkai_Star_Rail_App.png/revision/latest?cb=20240325233130" alt="Honkai Star Rail">
+            <a href="hsr.html" class="service-card">
+                <img src="https://static.wikia.nocookie.net/houkai-star-rail/images/8/84/Honkai_Star_Rail_App.png" alt="Honkai Star Rail">
                 <h2>Honkai Star Rail</h2>
                 <p>Boosting level & farming cepat.</p>
-                <div class="pricing">
-                    🎮 Paket Daily: $1 <br>
-                    🔥 Paket Weekly: $10 <br>
-                    💎 Paket Monthly: $100
-                </div>
-            </div>
-            <div class="service-card">
-                <img src="https://preview.redd.it/who-is-the-character-on-the-logo-of-genshin-impact-v0-jqn49sddqi3b1.png?width=256&format=png&auto=webp&s=f18b7a8238aa5622fa49624d86bc7f8f37704847" alt="Genshin Impact">
+            </a>
+            <a href="genshin.html" class="service-card">
+                <img src="https://preview.redd.it/who-is-the-character-on-the-logo-of-genshin-impact.png" alt="Genshin Impact">
                 <h2>Genshin Impact</h2>
                 <p>Adventure Rank & Spiral Abyss clear.</p>
-                <div class="pricing">
-                    🎮 Paket Daily: $1 <br>
-                    🔥 Paket Weekly: $10 <br>
-                    💎 Paket Monthly: $100
-                </div>
-            </div>
-            <div class="service-card">
-                <img src="https://preview.redd.it/zenless-zone-zero-logo-by-me-kip-v0-j0ojh2twl45d1.jpg?width=640&crop=smart&auto=webp&s=c2b4ef9c77ff29d43ddfd0f3702d8a2f5ac13fd2" alt="Zenless Zone Zero">
+            </a>
+            <a href="zzz.html" class="service-card">
+                <img src="https://preview.redd.it/zenless-zone-zero-logo-by-me-kip-v0.jpg" alt="Zenless Zone Zero">
                 <h2>Zenless Zone Zero</h2>
                 <p>Leveling cepat & event completion.</p>
-                <div class="pricing">
-                    🎮 Paket Daily: $1 <br>
-                    🔥 Paket Weekly: $10 <br>
-                    💎 Paket Monthly: $100
-                </div>
-            </div>
-            <div class="service-card">
+            </a>
+            <a href="wuthering.html" class="service-card">
                 <img src="https://play-lh.googleusercontent.com/ameFGPYH-qhOSxdsSA_fA54I4Ch-eO8y7Pj4x6W6ejQkvKbhVjCehKlPerBY9X2L8ek" alt="Wuthering Waves">
                 <h2>Wuthering Waves</h2>
                 <p>Power-leveling dan grinding.</p>
-                <div class="pricing">
-                    🎮 Paket Daily: $1 <br>
-                    🔥 Paket Weekly: $10 <br>
-                    💎 Paket Monthly: $100
-                </div>
-            </div>
+            </a>
+            <a href="testimoni.html" class="service-card">
+                <h2>Testimoni</h2>
+                <p>Lihat testimoni pelanggan kami!</p>
+            </a>
         </div>
 
         <div class="cta">

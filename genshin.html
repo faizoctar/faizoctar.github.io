@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact - Yoori Store</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { 
+            background: linear-gradient(45deg, #1e40af, #2563eb, #3b82f6, #60a5fa); 
+            color: white; text-align: center; padding: 40px;
+            background-size: 300% 300%;
+            animation: gradientBG 8s infinite alternate;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .container { max-width: 600px; margin: auto; }
+        .logo img { width: 120px; margin-bottom: 15px; }
+        h1 { font-size: 2.8em; margin-bottom: 10px; }
+        .desc { font-size: 1.2em; margin-bottom: 30px; }
+        
+        .pricing { display: flex; flex-direction: column; gap: 15px; }
+        .price-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px; border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            font-size: 1.2em;
+        }
+        .price-card:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        .cta { margin-top: 30px; }
+        .cta a {
+            text-decoration: none; display: inline-block;
+            background: #22c55e; color: white;
+            padding: 12px 25px; border-radius: 8px;
+            font-size: 1.2em; font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta a:hover { background: #16a34a; }
+
+        .back { margin-top: 30px; }
+        .back a {
+            text-decoration: none; display: inline-block;
+            background: #64748b; color: white;
+            padding: 10px 20px; border-radius: 8px;
+            font-size: 1em; font-weight: bold;
+            transition: background 0.3s;
+        }
+        .back a:hover { background: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://preview.redd.it/who-is-the-character-on-the-logo-of-genshin-impact-v0-jqn49sddqi3b1.png?width=256&format=png&auto=webp&s=f18b7a8238aa5622fa49624d86bc7f8f37704847" alt="Genshin Impact">
+        </div>
+        <h1>Genshin Impact</h1>
+        <p class="desc">Adventure Rank & Spiral Abyss clear cepat dan aman!</p>
+
+        <div class="pricing">
+            <div class="price-card">🎮 Paket Daily: $1</div>
+            <div class="price-card">🔥 Paket Weekly: $10</div>
+            <div class="price-card">💎 Paket Monthly: $100</div>
+        </div>
+
+        <div class="cta">
+            <a href="http://wa.me/+62895708250700">Pesan Sekarang</a>
+        </div>
+
+        <div class="back">
+            <a href="index.html">Kembali ke Home</a>
+        </div>
+    </div>
+</body>
+</html>

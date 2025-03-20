@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni - Yoori Store</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body {
+            background: linear-gradient(45deg, #f59e0b, #f97316, #ef4444);
+            background-size: 300% 300%;
+            animation: gradientBG 8s infinite alternate;
+            text-align: center;
+            color: white;
+            padding: 40px;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        h1 { font-size: 2.8em; margin-bottom: 10px; }
+        p { font-size: 1.2em; margin-bottom: 30px; }
+
+        .testimonials {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .name { font-size: 1.3em; font-weight: bold; margin-bottom: 5px; }
+        .rating { color: #facc15; font-size: 1.5em; margin-bottom: 10px; }
+        .cta {
+            margin-top: 30px;
+        }
+        .cta a {
+            text-decoration: none;
+            background: #22c55e;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .cta a:hover {
+            background: #16a34a;
+        }
+        .back {
+            margin-top: 30px;
+        }
+        .back a {
+            text-decoration: none;
+            display: inline-block;
+            background: #64748b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .back a:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testimoni Pelanggan</h1>
+    <p>Apa kata mereka tentang layanan kami? 💬</p>
+
+    <div class="testimonials">
+        <div class="testimonial-card">
+            <img class="avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar">
+            <div class="name">Fajar</div>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Boosting sangat cepat! Trusted 100%!"</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img class="avatar" src="https://randomuser.me/api/portraits/women/45.jpg" alt="Avatar">
+            <div class="name">Siti</div>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Akun saya aman, pelayanan profesional!"</p>
+        </div>
+
+        <div class="testimonial-card">
+            <img class="avatar" src="https://randomuser.me/api/portraits/men/50.jpg" alt="Avatar">
+            <div class="name">Andi</div>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Harga murah, hasil memuaskan! Mantap!"</p>
+        </div>
+    </div>
+
+    <div class="cta">
+        <a href="http://wa.me/+62895708250700">Pesan Sekarang</a>
+    </div>
+
+    <div class="back">
+        <a href="index.html">Kembali ke Home</a>
+    </div>
+</body>
+</html>

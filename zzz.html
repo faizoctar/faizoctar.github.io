@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenless Zone Zero - Yoori Store</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body {
+            background: linear-gradient(45deg, #1e3a8a, #0f172a);
+            background-size: 300% 300%;
+            animation: gradientBG 8s infinite alternate;
+            text-align: center;
+            color: white;
+            padding: 40px;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .container { max-width: 600px; margin: auto; }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .game-logo {
+            width: 150px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        p { font-size: 1.2em; margin-bottom: 20px; }
+
+        .pricing {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .price-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            width: 180px;
+            transition: transform 0.3s;
+        }
+        .price-card:hover {
+            transform: scale(1.05);
+        }
+        .price-card h3 { font-size: 1.4em; margin-bottom: 5px; }
+        .price-card p { font-size: 1.1em; margin-bottom: 10px; }
+
+        .cta {
+            margin-top: 30px;
+        }
+        .cta a {
+            text-decoration: none;
+            background: #22c55e;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .cta a:hover {
+            background: #16a34a;
+        }
+        .back {
+            margin-top: 30px;
+        }
+        .back a {
+            text-decoration: none;
+            display: inline-block;
+            background: #64748b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .back a:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Zenless Zone Zero</h1>
+        <img class="game-logo" src="https://preview.redd.it/zenless-zone-zero-logo-by-me-kip-v0-j0ojh2twl45d1.jpg?width=640&crop=smart&auto=webp&s=c2b4ef9c77ff29d43ddfd0f3702d8a2f5ac13fd2" alt="Zenless Zone Zero Logo">
+        <p>Leveling cepat & event completion.</p>
+
+        <div class="pricing">
+            <div class="price-card">
+                <h3>Paket Daily</h3>
+                <p>$1 per hari</p>
+            </div>
+            <div class="price-card">
+                <h3>Paket Weekly</h3>
+                <p>$10 per minggu</p>
+            </div>
+            <div class="price-card">
+                <h3>Paket Monthly</h3>
+                <p>$100 per bulan</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="http://wa.me/+62895708250700">Pesan Sekarang</a>
+        </div>
+
+        <div class="back">
+            <a href="index.html">Kembali ke Home</a>
+        </div>
+    </div>
+</body>
+</html>
